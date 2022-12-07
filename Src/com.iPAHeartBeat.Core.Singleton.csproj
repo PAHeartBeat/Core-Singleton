@@ -48,15 +48,15 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Project Meta and settings.">
-    <Product>Singleton releated Setting for the any kind of class. Support by Multiple-framework</Product>
+    <Product>Singleton Pattern Accessor for C# Classes.</Product>
     <PackageId>iPAHeartBeat.Core.Singleton</PackageId>
     <PackageTags>C#, Dependency, Object Reusability.</PackageTags>
-    <Description>This Package is created to provide very low leve Dependency system to reuse different kind of the type/object with just one instance of it. It's kind of singleton system.</Description>
+    <Description>This system provide Singleton access to any kind of the class by just inheriting the system as parent/base class. Support by Multiple-framework.</Description>
 
     <RootNamespace>iPAHeartBeat.Core</RootNamespace>
     <AssemblyName>$(PackageId)-$(TargetFramework)</AssemblyName>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
     <NeutralLanguage>en</NeutralLanguage>
 
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
