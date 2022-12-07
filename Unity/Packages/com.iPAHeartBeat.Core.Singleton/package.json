@@ -1,0 +1,31 @@
+{
+	"name": "com.ipaheartbeat.core.singleton",
+	"version": "1.0.0-RC1",
+	"displayName": "Core Singleton",
+	"description": "This system provide Singleton access to any kind of the class by just inheriting the system as parent/base class.",
+	"license": "LGPL-3.0-or-later",
+	"unity": "2017.1",
+	"dependencies": {},
+	"keywords": [
+		"Core",
+		"Singleton",
+		"Unity",
+		"iPAHeartBeat",
+		"public",
+		".Net 4.7.1"
+	],
+	"author": {
+		"name": "Ankur Ranpariya",
+		"email": "ankur30884@gmail.com"
+	},
+	"samples": [],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PAHeartBeat/Core-Singleton"
+	},
+	"bugs": {
+		"url": "https://github.com/PAHeartBeat/Core-Singleton/issues",
+		"email": "ankur30884@gmail.com"
+	},
+	"type": "library"
+}
