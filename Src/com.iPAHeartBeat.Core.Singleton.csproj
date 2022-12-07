@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net471;net48;net5.0;net6.0;net7.0</TargetFrameworks>
+    <TargetFrameworks>net471;net48;net6.0;net7.0</TargetFrameworks>
     <LangVersion>10</LangVersion>
     <OutputType>library</OutputType>
   </PropertyGroup>

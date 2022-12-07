@@ -434,6 +434,10 @@ dotnet_diagnostic.SA1027.severity = silent
 # Justification: Breace policy Configured to share same bracing for other backend laguague like JavaScript, Node.Js
 dotnet_diagnostic.SA1500.severity = silent
 
+# S2743: A static field in a generic type is not shared among instances of different close constructed types.
+# Justification: It's intented in this project for Use Generic type as static to get non-share instace between types.
+dotnet_diagnostic.S2743.severity = silent
+
 # SA1200: Using directives should be placed correctly
 # Justification:
 # dotnet_diagnostic.SA1200.severity = silent
