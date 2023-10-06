@@ -1,31 +1,31 @@
 {
-	"name": "com.ipaheartbeat.core.singleton",
-	"version": "1.0.0-RC1",
-	"displayName": "Core Singleton",
-	"description": "This system provide Singleton access to any kind of the class by just inheriting the system as parent/base class.",
-	"license": "LGPL-3.0-or-later",
-	"unity": "2017.1",
-	"dependencies": {},
-	"keywords": [
-		"Core",
-		"Singleton",
-		"Unity",
-		"iPAHeartBeat",
-		"public",
-		".Net 4.7.1"
-	],
-	"author": {
-		"name": "Ankur Ranpariya",
-		"email": "ankur30884@gmail.com"
-	},
-	"samples": [],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/PAHeartBeat/Core-Singleton"
-	},
-	"bugs": {
-		"url": "https://github.com/PAHeartBeat/Core-Singleton/issues",
-		"email": "ankur30884@gmail.com"
-	},
-	"type": "library"
+  "name": "com.ipaheartbeat.core.singleton",
+  "version": "1.0.1",
+  "displayName": "Core Singleton",
+  "description": "Introducing the Singleton Access System\n\nThis system offers a streamlined way to access any class. You can achieve this by simply making the system your class's parent or base class.\n\nIn simpler terms, if you want to ensure that only one instance of a class can exist, you can use this system. It's a convenient and efficient way to manage your classes and ensure they work as singletons, even if you're new to programming or a seasoned pro.",
+  "license": "LGPL-3.0-or-later",
+  "unity": "2017.1",
+  "dependencies": {},
+  "keywords": [
+    "Core",
+    "Singleton",
+    "Unity",
+    "iPAHeartBeat",
+    "public",
+    ".Net 4.7.1"
+  ],
+  "author": {
+    "name": "Ankur Ranpariya",
+    "email": "ankur30884@gmail.com"
+  },
+  "samples": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PAHeartBeat/Core-Singleton"
+  },
+  "bugs": {
+    "url": "https://github.com/PAHeartBeat/Core-Singleton/issues",
+    "email": "ankur30884@gmail.com"
+  },
+  "type": "library"
 }

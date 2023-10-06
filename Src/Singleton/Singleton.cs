@@ -5,15 +5,15 @@
 // --------------------------------------------------------------------------------
 
 /*
-Author:			Ankur Ranpariya {iPAHeartBeat}
-EMail:			ankur30884@gmail.com
-Copyright:		(c) 2017, Ankur Ranpariya {iPAHeartBeat}
-Social:			@iPAHeartBeat,
-GitHubL			https://www.github.com/PAHeartBeat
+Author:				Ankur Ranpariya {iPAHeartBeat}
+EMail:				ankur30884@gmail.com
+Copyright:			(c) 2017, Ankur Ranpariya {iPAHeartBeat}
+Social:				@iPAHeartBeat,
+GitHub:				https://www.github.com/PAHeartBeat
 
 Original Source:	N/A
-Last Modified: 	Ankur Ranpariya
-Contributed By:	N/A
+Last Modified: 		Ankur Ranpariya
+Contributed By:		N/A
 
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
@@ -78,6 +78,6 @@ public abstract class Singleton<TClass>
 		}
 
 		protected set
-		=> _instance = value;
+			=> _instance = value;
 	}
 }

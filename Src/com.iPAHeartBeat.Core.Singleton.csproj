@@ -1,89 +1,102 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net471;net48;net6.0;net7.0</TargetFrameworks>
-    <LangVersion>10</LangVersion>
-    <OutputType>library</OutputType>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net471;net48;net6.0;net7.0</TargetFrameworks>
+		<LangVersion>10</LangVersion>
+		<OutputType>library</OutputType>
+	</PropertyGroup>
 
-  <PropertyGroup Label="Analyzer Setting">
-    <AnalysisLevel>latest</AnalysisLevel>
-    <EnableNETAnalyzers>true</EnableNETAnalyzers>
-    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
-    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
-  </PropertyGroup>
+	<PropertyGroup Label="Analyzer Setting">
+		<AnalysisLevel>latest</AnalysisLevel>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+	</PropertyGroup>
 
-  <PropertyGroup Label="ReadyToRun Settings">
-    <PublishReadyToRun>true</PublishReadyToRun>
-    <PublishReadyToRunEmitSymbols>true</PublishReadyToRunEmitSymbols>
-    <PublishReadyToRunComposite Condition="'$(SelfContained)' == true">true</PublishReadyToRunComposite>
-  </PropertyGroup>
+	<PropertyGroup Label="ReadyToRun Settings">
+		<PublishReadyToRun>true</PublishReadyToRun>
+		<PublishReadyToRunEmitSymbols>true</PublishReadyToRunEmitSymbols>
+		<PublishReadyToRunComposite Condition="'$(SelfContained)' == true">true</PublishReadyToRunComposite>
+	</PropertyGroup>
 
-  <PropertyGroup Label="Trimming Setting" Condition="'$(SelfContained)' == 'true'">
-    <PublishTrimmed>true</PublishTrimmed>
-    <IsTrimmable>true</IsTrimmable>
-    <TrimMode>link</TrimMode> <!-- copyused, link-->
-  </PropertyGroup>
+	<PropertyGroup Label="Trimming Setting" Condition="'$(SelfContained)' == 'true'">
+		<PublishTrimmed>true</PublishTrimmed>
+		<IsTrimmable>true</IsTrimmable>
+		<TrimMode>link</TrimMode> <!-- copyused, link-->
+	</PropertyGroup>
 
-  <PropertyGroup Label="NuGet Pacakge Settings">
-    <IsPackable>true</IsPackable>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageVersion>1.0.0-RC1</PackageVersion>
-  </PropertyGroup>
+	<PropertyGroup Label="NuGet Pacakge Settings">
+		<IsPackable>true</IsPackable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageVersion>1.0.1</PackageVersion>
+	</PropertyGroup>
 
-  <PropertyGroup Label="Debug and Exception Setting">
-    <DefineConstants>$(DefineConstants)</DefineConstants>
-    <Optimize>true</Optimize>
-    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-    <IncludeSymbols>true</IncludeSymbols>
-    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
-  </PropertyGroup>
+	<PropertyGroup Label="Debug and Exception Setting">
+		<DefineConstants>$(DefineConstants)</DefineConstants>
+		<Optimize>true</Optimize>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<IncludeSymbols>true</IncludeSymbols>
+		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+		<ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+	</PropertyGroup>
 
-  <PropertyGroup Label="Author and Copyright">
-    <Authors>Ankur Ranpariya</Authors>
-    <Copyright>@2021</Copyright>
-  </PropertyGroup>
+	<PropertyGroup Label="Author and Copyright">
+		<Authors>Ankur Ranpariya</Authors>
+		<Copyright>@2021</Copyright>
+	</PropertyGroup>
 
-  <PropertyGroup Label="Project Meta and settings.">
-    <Product>Singleton Pattern Accessor for C# Classes.</Product>
-    <PackageId>iPAHeartBeat.Core.Singleton</PackageId>
-    <PackageTags>C#, Dependency, Object Reusability.</PackageTags>
-    <Description>This system provide Singleton access to any kind of the class by just inheriting the system as parent/base class. Support by Multiple-framework.</Description>
+	<PropertyGroup Label="Project Meta and settings.">
+		<Product>Singleton Pattern Accessor for C# Classes.</Product>
+		<PackageId>iPAHeartBeat.Core.Singleton</PackageId>
+		<PackageTags>C#, Dependency, Object Reusability.</PackageTags>
+		<Description>Introducing the Singleton Access System
 
-    <RootNamespace>iPAHeartBeat.Core</RootNamespace>
-    <AssemblyName>$(PackageId)-$(TargetFramework)</AssemblyName>
-    <AssemblyVersion>1.0.0.1</AssemblyVersion>
-    <FileVersion>1.0.0.1</FileVersion>
-    <NeutralLanguage>en</NeutralLanguage>
+			This system offers a streamlined way to access any class. You can achieve this by simply making the system your class's parent or base class.
 
-    <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>$(AssemblyName).xml</DocumentationFile>
-  </PropertyGroup>
+			In simpler terms, if you want to ensure that only one instance of a class can exist, you can use this system. It's a convenient and efficient way to manage your classes and ensure they work as singletons, even if you're new to programming or a seasoned pro.
+		</Description>
 
-  <PropertyGroup Label="Project Git Info">
-    <PackageProjectUrl/>
-    <RepositoryUrl>https://github.com/PAHeartBeat/Core-Singleton</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-  </PropertyGroup>
+		<RootNamespace>iPAHeartBeat.Core</RootNamespace>
+		<AssemblyName>$(PackageId)</AssemblyName>
+		<AssemblyVersion>1.0.1</AssemblyVersion>
+		<FileVersion>1.0.1</FileVersion>
+		<NeutralLanguage>en</NeutralLanguage>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'"/>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'"/>
+	<PropertyGroup Label="Project Git Info">
+		<PackageProjectUrl />
+		<RepositoryUrl>https://github.com/PAHeartBeat/Core-Singleton</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <EditorConfigFiles Remove=".editorconfig"/>
-    <None Include=".editorconfig"/>
-  </ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
 
-  <ItemGroup>
-    <AdditionalFiles Include="stylecop.json"/>
-  </ItemGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'" />
 
-  <ItemGroup>
-    <None Include="LICENSE.md" Pack="true" PackagePath=""/>
-    <None Include="README.md" Pack="true" PackagePath=""/>
-  </ItemGroup>
+	<ItemGroup Label="Source Linking">
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+		<PackageReference Include="Microsoft.SourceLink.Bitbucket.Git" Version="1.1.1" PrivateAssets="All" />
+		<SourceLinkBitbucketGitHost Include="bitbucket.yourdomain.com" Version="4.5" />
+		<PackageReference Include="Microsoft.SourceLink.GitLab" Version="1.1.1" PrivateAssets="All" />
+		<SourceLinkGitLabHost Include="gitlab.yourdomain.com" Version="11.0" />
+		<PackageReference Include="Microsoft.SourceLink.Gitea" Version="1.1.1" PrivateAssets="All" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<EditorConfigFiles Remove=".editorconfig" />
+		<None Include=".editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AdditionalFiles Include="stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.md" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
 </Project>
