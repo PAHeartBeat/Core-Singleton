@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>iPAHeartBeat.Core.Singleton</name>
+    </assembly>
+    <members>
+        <member name="T:iPAHeartBeat.Core.Singleton.Singleton`1">
+            <summary>
+            Will provide basic singleton feature to any class which are derived from this one.
+            </summary>
+            <typeparam name="TClass">The name of the class which needs to be marked as Singleton.</typeparam>
+        </member>
+        <member name="F:iPAHeartBeat.Core.Singleton.Singleton`1._locked">
+            <summary>
+            Internal object to provide locking when creating instance of the object via Singleton Accessor Filed "Me".
+            </summary>
+        </member>
+        <member name="F:iPAHeartBeat.Core.Singleton.Singleton`1._instance">
+            <summary>
+            Internal static filed to use singleton instance.
+            </summary>
+        </member>
+        <member name="M:iPAHeartBeat.Core.Singleton.Singleton`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:iPAHeartBeat.Core.Singleton.Singleton`1"/> class.
+            </summary>
+        </member>
+        <member name="P:iPAHeartBeat.Core.Singleton.Singleton`1.Me">
+            <summary>
+            Gets or sets singleton Instance accessor property Me. WIll return a single copy of instance to use member's of the class without creating multiple instances.
+            </summary>
+        </member>
+    </members>
+</doc>
