@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>iPAHeartBeat.Core.Singleton-net471</name>
+        <name>iPAHeartBeat.Core.Singleton</name>
     </assembly>
     <members>
         <member name="T:iPAHeartBeat.Core.Singleton.Singleton`1">
